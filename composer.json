@@ -33,7 +33,8 @@
     "scripts": {
         "post-create-project-cmd": [
             "yii\\composer\\Installer::postCreateProject"
-        ]
+        ],
+        "post-install-cmd": "mkdir runtime/session"
     },
     "extra": {
         "yii\\composer\\Installer::postCreateProject": {

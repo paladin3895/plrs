@@ -21,7 +21,7 @@ $this->title = 'Customer';
             <?php $form = ActiveForm::begin([
                 'id' => 'auth-form', 'class' => 'form-signin',
                 'method' => 'POST',
-                'action' => Url::to('/customer-report/auth')
+                'action' => Url::to('@web/customer-report/auth')
             ]); ?>
 
                 <?= $form->field($model, 'name')->widget(

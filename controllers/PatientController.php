@@ -133,7 +133,7 @@ class PatientController extends Controller
 
     protected function contact(Patient $patient)
     {
-        $body = Yii::$app->params['email']['body']
+        $body = Yii::$app->params['email']['body'];
         $body = str_replace('{id}', $patient->id, $body);
         $body = str_replace('{name}', $patient->name, $body);
         $body = str_replace('{passcode}', $patient->passcode, $body);

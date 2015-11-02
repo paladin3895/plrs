@@ -1,20 +1,20 @@
-patient
-id
-name
-email
-passcode
+### patient ###
+id          integer, auto increment, primary key
+name        string, not null
+email       string, not null
+passcode    string, not null
 
-report
-id
-patient_id
-datetime
+### report ###
+id          integer, auto increment, primary key
+patient_id  integer, foreign key reference patient.id
+date        date, not null
 
-test
-id
-name
-format
+### test ###
+id          integer, auto increment, primary key
+name        string, not null
+description text
 
-report_test
-report_id
-test_id
-result
+### report_test ###
+report_id   integer, foreign key reference report.id
+test_id     integer, foreign key reference test.id
+result      text
