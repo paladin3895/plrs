@@ -24,11 +24,11 @@ $this->params['breadcrumbs'][] = $this->title;
     $gridColumn = [
         ['attribute' => 'id', 'hidden' => true],
         [
-            'attribute' => 'patient.id',
+            'attribute' => 'patient.name',
             'label' => Yii::t('app', 'Patient'),
         ],
         [
-            'attribute' => 'operator.id',
+            'attribute' => 'operator.username',
             'label' => Yii::t('app', 'Operator'),
         ],
         'date',
@@ -44,14 +44,18 @@ $this->params['breadcrumbs'][] = $this->title;
 <?php
     $gridColumnReportTest = [
         ['class' => 'yii\grid\SerialColumn'],
-        ['attribute' => 'id', 'hidden' => true],
+        // ['attribute' => 'id', 'hidden' => true],
+        // [
+        //     'attribute' => 'report.id',
+        //     'label' => Yii::t('app', 'Report'),
+        // ],
         [
-            'attribute' => 'report.id',
-            'label' => Yii::t('app', 'Report'),
+            'attribute' => 'test.name',
+            'label' => Yii::t('app', 'Test'),
         ],
         [
-            'attribute' => 'test.id',
-            'label' => Yii::t('app', 'Test'),
+            'attribute' => 'test.description',
+            'label' => Yii::t('app', 'Description'),
         ],
         'result',
     ];

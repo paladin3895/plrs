@@ -149,6 +149,6 @@ class CustomerReportController extends Controller
                 return $this->redirect('index');
             }
         }
-        return $this->redirect('/customer/index');
+        return $this->redirect('/customer-report/index');
     }
 }
