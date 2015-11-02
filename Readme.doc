@@ -1,9 +1,0 @@
-HOW TO USE
-1. install composer at https://getcomposer.org/doc/00-intro.md
-2. run this command to install neccessary packages:
-	composer global require "fxp/composer-asset-plugin:~1.0.0"
-3. navigate to plrs directory and run this command to install vendor packages
-	composer install
-4. navigate to config directory
-	4.1 edit db.php to match your database setting
-	4.2 edit web.php $config['component']['mailer']['transport'] to suit your email config
